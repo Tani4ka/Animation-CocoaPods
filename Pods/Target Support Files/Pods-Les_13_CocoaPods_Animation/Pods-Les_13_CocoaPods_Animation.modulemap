@@ -1,0 +1,6 @@
+framework module Pods_Les_13_CocoaPods_Animation {
+  umbrella header "Pods-Les_13_CocoaPods_Animation-umbrella.h"
+
+  export *
+  module * { export * }
+}
