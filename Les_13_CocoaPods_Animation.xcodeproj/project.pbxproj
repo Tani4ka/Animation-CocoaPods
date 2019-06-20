@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		562D24E222B92BEC00041219 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 562D24E022B92BEC00041219 /* Main.storyboard */; };
 		562D24E422B92BED00041219 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 562D24E322B92BED00041219 /* Assets.xcassets */; };
 		562D24E722B92BED00041219 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 562D24E522B92BED00041219 /* LaunchScreen.storyboard */; };
+		563AB4EE22BB721B00425197 /* DraggerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563AB4ED22BB721B00425197 /* DraggerTableViewCell.swift */; };
+		563AB4F022BB767E00425197 /* KingfisherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563AB4EF22BB767E00425197 /* KingfisherViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		562D24E322B92BED00041219 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		562D24E622B92BED00041219 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		562D24E822B92BED00041219 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		563AB4ED22BB721B00425197 /* DraggerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggerTableViewCell.swift; sourceTree = "<group>"; };
+		563AB4EF22BB767E00425197 /* KingfisherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 			children = (
 				562D24DC22B92BEC00041219 /* AppDelegate.swift */,
 				562D24DE22B92BEC00041219 /* ViewController.swift */,
+				563AB4EF22BB767E00425197 /* KingfisherViewController.swift */,
+				563AB4ED22BB721B00425197 /* DraggerTableViewCell.swift */,
 				562D24E022B92BEC00041219 /* Main.storyboard */,
 				562D24E322B92BED00041219 /* Assets.xcassets */,
 				562D24E522B92BED00041219 /* LaunchScreen.storyboard */,
@@ -85,7 +91,6 @@
 				2207B6B39D451A48231EFC14 /* Pods-Les_13_CocoaPods_Animation.debug.xcconfig */,
 				3F789FB488B93123739C027C /* Pods-Les_13_CocoaPods_Animation.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -206,6 +211,8 @@
 			files = (
 				562D24DF22B92BEC00041219 /* ViewController.swift in Sources */,
 				562D24DD22B92BEC00041219 /* AppDelegate.swift in Sources */,
+				563AB4F022BB767E00425197 /* KingfisherViewController.swift in Sources */,
+				563AB4EE22BB721B00425197 /* DraggerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

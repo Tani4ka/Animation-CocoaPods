@@ -8,5 +8,6 @@ target 'Les_13_CocoaPods_Animation' do
   # Pods for Les_13_CocoaPods_Animation
 
   pod 'Kingfisher', '~> 5.0'
+  pod 'TableViewDragger'
 
 end
