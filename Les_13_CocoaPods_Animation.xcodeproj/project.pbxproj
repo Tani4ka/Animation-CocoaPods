@@ -15,6 +15,7 @@
 		562D24E722B92BED00041219 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 562D24E522B92BED00041219 /* LaunchScreen.storyboard */; };
 		563AB4EE22BB721B00425197 /* DraggerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563AB4ED22BB721B00425197 /* DraggerTableViewCell.swift */; };
 		563AB4F022BB767E00425197 /* KingfisherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563AB4EF22BB767E00425197 /* KingfisherViewController.swift */; };
+		563AB4F222BB97C600425197 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563AB4F122BB97C600425197 /* AnimationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		562D24E822B92BED00041219 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		563AB4ED22BB721B00425197 /* DraggerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggerTableViewCell.swift; sourceTree = "<group>"; };
 		563AB4EF22BB767E00425197 /* KingfisherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherViewController.swift; sourceTree = "<group>"; };
+		563AB4F122BB97C600425197 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,16 +75,49 @@
 		562D24DB22B92BEC00041219 /* Les_13_CocoaPods_Animation */ = {
 			isa = PBXGroup;
 			children = (
+				563AB4F322BB97DC00425197 /* Resourses */,
+				563AB4F522BB97FA00425197 /* ViewControllers */,
+				563AB4F422BB97E700425197 /* Views */,
+				563AB4F622BB982300425197 /* Models */,
+				562D24E822B92BED00041219 /* Info.plist */,
 				562D24DC22B92BEC00041219 /* AppDelegate.swift */,
-				562D24DE22B92BEC00041219 /* ViewController.swift */,
-				563AB4EF22BB767E00425197 /* KingfisherViewController.swift */,
-				563AB4ED22BB721B00425197 /* DraggerTableViewCell.swift */,
+			);
+			path = Les_13_CocoaPods_Animation;
+			sourceTree = "<group>";
+		};
+		563AB4F322BB97DC00425197 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
 				562D24E022B92BEC00041219 /* Main.storyboard */,
 				562D24E322B92BED00041219 /* Assets.xcassets */,
 				562D24E522B92BED00041219 /* LaunchScreen.storyboard */,
-				562D24E822B92BED00041219 /* Info.plist */,
 			);
-			path = Les_13_CocoaPods_Animation;
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		563AB4F422BB97E700425197 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				563AB4ED22BB721B00425197 /* DraggerTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		563AB4F522BB97FA00425197 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				562D24DE22B92BEC00041219 /* ViewController.swift */,
+				563AB4EF22BB767E00425197 /* KingfisherViewController.swift */,
+				563AB4F122BB97C600425197 /* AnimationViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		563AB4F622BB982300425197 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		F50E44ADD1E608452F3DBD98 /* Pods */ = {
@@ -211,6 +246,7 @@
 			files = (
 				562D24DF22B92BEC00041219 /* ViewController.swift in Sources */,
 				562D24DD22B92BEC00041219 /* AppDelegate.swift in Sources */,
+				563AB4F222BB97C600425197 /* AnimationViewController.swift in Sources */,
 				563AB4F022BB767E00425197 /* KingfisherViewController.swift in Sources */,
 				563AB4EE22BB721B00425197 /* DraggerTableViewCell.swift in Sources */,
 			);
