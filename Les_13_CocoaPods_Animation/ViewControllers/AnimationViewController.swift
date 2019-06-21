@@ -62,14 +62,71 @@ class AnimationViewController: UIViewController {
     }
     
     @IBAction func three() {
+        UIView.transition(with: animationView, duration: 2.0, options: [.transitionCurlUp], animations: {
+            self.animationSwich.isHidden = false
+        }, completion: { isFinished in
+            if isFinished {
+                UIView.transition(with: self.animationView, duration: 2.0, options: [.transitionFlipFromBottom], animations: {
+                    self.animationSwich.isHidden = true
+                }, completion: nil)
+            }
+        })
     }
     
     @IBAction func four() {
+        UIView.animate(withDuration: 2, delay: 0, options: [.curveLinear], animations: {
+            self.animationView.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
+        }) { (isFinished) in
+            UIView.animate(withDuration: 3, delay: 0, options: [.curveLinear], animations: {
+                self.animationView.transform = CGAffineTransform(scaleX: 1, y: 1)
+            }, completion: nil)
+        }
     }
     
-// MARK: - LifeCycle
+    
+    // Dynamic Animation
+    
+    // create vars
+    var animator: UIDynamicAnimator?
+    var gravity: UIGravityBehavior?
+    var colider: UICollisionBehavior?
+    var itemBehavior: UIDynamicItemBehavior?
+    
+    @IBAction func five() {
+        
+        let newView = UIView(frame: CGRect(x: 200, y: 0, width: 30, height: 30))
+        newView.backgroundColor = UIColor.magenta
+        view.addSubview(newView)
+        
+        // add properties to newView
+        itemBehavior?.addItem(newView)
+        gravity?.addItem(newView)
+        colider?.addItem(newView)
+    }
+    
+    // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // init vars
+        animator = UIDynamicAnimator(referenceView: view)
+        
+        gravity = UIGravityBehavior()
+        colider = UICollisionBehavior()
+        itemBehavior = UIDynamicItemBehavior()
+        
+        // set value for vars
+        colider?.translatesReferenceBoundsIntoBoundary = true // не вылезит за границы
+        colider?.collisionMode = .everything // все внутри будет соприкасаться между собой, buundaries - только с границами view
+        
+        itemBehavior?.allowsRotation = true  // вращение при соприкосновении
+        itemBehavior?.elasticity = 0.7       // жесткость элемента
+        itemBehavior?.friction = 0.6         // сопритивление какому-то поведению
+        
+         // add view this behaviors
+        animator?.addBehavior(gravity!)
+        animator?.addBehavior(colider!)
+        animator?.addBehavior(itemBehavior!)
 
     }
 }
